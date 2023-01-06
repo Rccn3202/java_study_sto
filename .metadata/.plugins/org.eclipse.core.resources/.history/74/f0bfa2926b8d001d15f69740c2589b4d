@@ -1,0 +1,16 @@
+package javaBasic1;
+
+public class OperandEx1 {
+
+	public static void main(String[] args) {
+		// 楷魂磊
+		int a=10;
+		//11免仿
+		//System.out.println(a+1); //规过1
+		//a = a+1;
+		//System.out.println(a); //规过2
+		a++; //规过3
+		System.out.println(a)
+	}
+
+}

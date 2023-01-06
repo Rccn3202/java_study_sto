@@ -1,0 +1,58 @@
+package ch02.sec01;
+
+import java.util.Scanner;
+
+public class VarEx3 {
+
+	public static void main(String[] args) {
+		/* 아래와 같이 입력합니다.
+		이름은==> 홍길동
+		국어점수==> 100
+		영어점수==> 80
+		수학점수==> 90
+		
+		출력화면
+		
+		-------------------------
+		이젠 학교 성적표
+		-------------------------
+		홍길동 100 80 90 270 90 1등
+        -------------------------- */
+		
+		//키보드 입력하는 스캐너 객체 사용
+		Scanner sc = new Scanner(System.in);
+		//입력하기
+		String name = sc.next();
+		System.out.print("이름은==>" + name);
+		
+		String kor = sc.next();
+		System.out.print("국어==>" + kor);
+		
+		String eng = sc.next();
+		System.out.print("영어==>" + eng);
+		
+		String math = sc.next();
+		System.out.print("수학==>" + math);
+		
+		System.out.println("출력화면");
+		
+		System.out.println("-------------------------");
+		
+		System.out.println("이젠 학교 성적표");
+		
+		System.out.println("-------------------------");
+		
+		
+		System.out.println("-------------------------");
+		
+		
+		
+		
+		
+		
+		//
+		
+		
+	}
+
+}

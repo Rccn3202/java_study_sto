@@ -1,0 +1,80 @@
+package javaBasic1;
+
+import java.util.Scanner;
+
+import javax.print.attribute.SetOfIntegerSyntax;
+
+public class VarEx6 {
+
+	public static void main(String[] args) {
+		// 이름, 년도 입력 받는다. 나이 출력하시오
+		
+		 Scanner sc = new Scanner(System.in);
+		 System.out.println("-----------------");
+		 System.out.println("나이 계싼하는 프로그램");
+		 System.out.println("-----------------");
+		 
+		 System.out.print("이름은==> ");
+		 String name = sc.next();
+		 
+		 System.out.print("당신의 태어난 년도는==> " );
+		 int birthYear = sc.nextInt();
+		 int age = 2023 - birthYear;
+	
+		 System.out.println("귀하 "+name+"의 나이는 "+age+"세 이십니다.");
+		 //조건 나이 0~7살 유아 8~13 어린이 14~19 청소년 20~50 어른 61~노인
+		 
+	/*	 if(0<=age && age <=7) {
+			 System.out.println("유아=>100");
+			 System.out.println("지원금 100만원");
+		 }
+		 else if(8<=age && age <=13 ) {
+		 System.out.println("어린이=>50");
+		 System.out.println("지원금 50");
+		 }
+		 else if (14<=age && age <=19) {
+		 System.out.println("청소년=>30");
+		 System.out.println("지원금 30");
+		 }
+		 else if(20<=age && age <=60 ) {
+		 System.out.println("어른=>-20");
+		 System.out.println("20만원 내세요");
+		 }
+		 else if(61<=age ) {
+		 System.out.println("노인=>50");
+		 System.out.println("지원금 50");}}
+		 
+		 //조건 유아인 경우는 지원금 100만원을 받으세요 /어린이 50만원, 노인 30만원
+		 */
+		 
+		 
+		 //agetype : 나이별 타입(유아, 어린이,..) subsidy=100 -20 ...//지원금 받는 것+내는 것
+		 String ageType;  //나이별 타입
+		 int subsidy; //지원금
+		 
+		 if(0<=age && age <=7) {
+			 ageType="유아";
+			 subsidy=100;
+		 } else if(8<=age && age <=13 ) {
+				 ageType="어린이";
+			 subsidy=50;
+	     } else if (14<=age && age <=19) {
+				 ageType="청소년";
+				 subsidy=20;
+			 }
+			 else if(20<=age && age <=60 ) {
+				 ageType="어른";
+				 subsidy=20;
+				 
+			 } else (61<=age ) {     //마지막은 else if 안하고 else만 해도 됨
+					 ageType="노인";
+					 subsidy=30;
+						 }
+			 {
+		 }
+			 System.out.println("당신은"+ageType+"입니다. 정부지원금 "+subsidy+ " 받으세요");
+			
+
+	}
+
+}

@@ -71,47 +71,14 @@ public class OperandEx1 {
 		System.out.println(v4 != 200);   
 		
 		//비트 연산자 이용 - 과학, 전자분야에서 주로 사용
-		//int v5 = 0b01011; //1 true 0 false
-		//int v6 = 0b10111; //
-		//System.out.println( v5 & v6 ); //위의 0과 아래 1 같은지 비교-> 00011
+		int v5 = 0b01011; //1 true 0 false
+		int v6 = 0b10111; //
+		System.out.println( v5 & v6 ); //위의 0과 아래 1 같은지 비교-> 00011
 		
 		int v5 = 0b01011; //1 true 0 false
 		int v6 = 0b10111; //
-		System.out.println( Integer.toBinaryString(v5 & v6)); 
-		System.out.println( Integer.toBinaryString(v5 | v6)); //11111 
-		System.out.println( Integer.toBinaryString(v5 ^ v6)); //11100 xor(교차하다) 윗줄 아랫줄 01,10 이면 1 / 11 00이면 0 나온다
-
-		//대입연산자 = : 우변에 있는 값을 좌변(변수만 나와야 함)에 넣으세요
-		int v7 =200;
-		// int 200 = v7; // 오류 :숫자는 변수가 될 수 없다
+		System.out.println( Integer.toBinaryString(v5 & v6)); //위의 0과 아래 1 같은지 비교-> 00011
 		
-		int v8 = v2+200;
-		// int v2 + 200 =v8; //오류
-		
-		//삼항연산자   (조건) ? 참:거짓
-		int v9=10;
-		System.out.println( (v9==10) ? "합격" : "불합격");
-		int v99=15;
-		System.out.println( (v99==10) ? "합격" : "불합격");
-		
-		String type="A";
-		String result;
-		result = (type.equals("A")) ? "VIP고객입니다" : "일반고객입니다" ;
-		System.out.println(result);	
-
-		// 문제 : 숫자 변수에 50을 입력하고 25이상이면 "포인트대상" 아니면 "포인트 대상이 아닙니다"라고 출력
-		
-		int v10=50;
-		System.out.println( (v10>=25) ? "포인트대상" : "포인트 대상이 아닙니다");
-		
-		
-		
-		// 문제 : 문자형 변수에 "자바"라고 입력하고 자바가 아니면 "B교실,C교실입니다." 자바이면 "A교실 입니다" 라고 출력 
-		String type1="자바";
-		String result1;
-		result = (type1.equals("자바")) ? "A교실 입니다" : "B교실,C교실입니다." ;
-		System.out.println(result);	
-
 	}
 
 }

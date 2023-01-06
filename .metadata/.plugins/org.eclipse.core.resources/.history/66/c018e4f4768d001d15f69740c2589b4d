@@ -102,16 +102,14 @@ public class OperandEx1 {
 		// 문제 : 숫자 변수에 50을 입력하고 25이상이면 "포인트대상" 아니면 "포인트 대상이 아닙니다"라고 출력
 		
 		int v10=50;
-		System.out.println( (v10>=25) ? "포인트대상" : "포인트 대상이 아닙니다");
+		System.out.println( (v9>=25) ? "포인트대상" : "포인트 대상이 아닙니다");
+		//int v99=15;
+	//	System.out.println( (v99==10) ? "합격" : "불합격");
 		
 		
+		// 문제 : 문자형 변수에 "자바"라고 입력하고 자바가 아니면 "B교실,C교실입니다." 아니면 "A교실 입니다" 라고 출력 
 		
-		// 문제 : 문자형 변수에 "자바"라고 입력하고 자바가 아니면 "B교실,C교실입니다." 자바이면 "A교실 입니다" 라고 출력 
-		String type1="자바";
-		String result1;
-		result = (type1.equals("자바")) ? "A교실 입니다" : "B교실,C교실입니다." ;
-		System.out.println(result);	
-
+		
 	}
 
 }

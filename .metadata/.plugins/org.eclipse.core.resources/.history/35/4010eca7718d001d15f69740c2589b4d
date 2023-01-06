@@ -1,0 +1,68 @@
+package javaBasic1;
+
+public class OperandEx1 {
+
+	public static void main(String[] args) {
+		// 연산자1 ++a : 전위 단항 연산자  a--: 후위 단항 연산자
+		int a=10;
+		//11출력
+		//System.out.println(a+1); //방법1
+		//a = a+1;
+		//System.out.println(a); //방법2
+		//a++; //방법3
+		//++a;
+		//System.out.println(a); 
+		
+		
+		//9 출력
+//		a--;
+//		System.out.println(a);
+
+		int b,c;
+		//문: b변수에 11을 넣어서 출력해주세요
+	//	b = 11; //방법1
+	//	b = a+1; //방법2 
+//		a++; //방법3
+//		b = a;
+//		System.out.println(b);
+		b= ++a; //a=a+1 b=a  : 1더한다->B출력
+		b= a++; //b=a a=a+1 : bcnffur ->1더한다
+		System.out.println(a+ " " + b);
+		
+		int d=20;
+		System.out.println(++d); // d=d+1 후 출력
+		
+		//연산자2 (a=a+1 a+=1) (a=a+2 a+=2)   (a=a+b a+=b) (a=a-10 a-=10)  (a = a*b a*=b)
+		int e=10;
+		// e = e - 8;
+		e-=8;
+		System.out.println(e);
+		
+		//연산자3
+		//나누기 25/5=5 25/4 = 6.25
+		//int v1=25;
+		//int v2=4;
+		//System.out.println(v1/v2); //6 나온다 정수/정수=정수니까
+		//소수점 나오게 하려면?
+		//생각 1. 자료형을 실수로 만들기
+		//생각 2. 자료형은 정수로 그대로 하고 2500/500=625,625/100 한다
+		
+		//~내가 해봄~
+		double v3=25; //변수 실수로 규정하기? 
+		double v4=4;
+		System.out.println(v3/v4);
+		
+		//생각 1.
+		int v1=25;
+		int v2=4;
+		System.out.println(v1/(double) v2);
+		//생각 2.
+		v1 *=100; //v1 = v1 * 100;
+		v2 *=100; //v2 = v2 * 100;
+		System.out.println((v1/(double)v2)*100);
+		
+		
+		
+	}
+
+}

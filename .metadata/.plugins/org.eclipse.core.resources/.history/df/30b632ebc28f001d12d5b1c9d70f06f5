@@ -1,0 +1,42 @@
+package javaBasic1;
+
+import java.util.Scanner;
+
+public class b {
+	public static void main(String[] args) {
+		////문제 숫자3개를 입력받아서 중간 숫자를 출력하기 /
+		//maxNumber MinNumber 둘다 아니면 중간 숫자
+		Scanner sc=new Scanner(System.in);
+
+
+		System.out.print("num1-->");
+		int number1=sc.nextInt();
+		System.out.print("num2--->");
+		int number2=sc.nextInt();
+		System.out.print("num3--->");
+		int number3=sc.nextInt();
+
+	
+		int maxNumber=(number1>=number2) ? number1:number2; 
+		maxNumber =(maxNumber>=number3) ? maxNumber:number3; //최댓값 구함
+	
+		int minNumber=(number1<=number2) ? number1:number2;
+		minNumber =(minNumber<=number3) ? minNumber:number3; //최소값 구함
+		
+//		//경우의 수 10 5 20
+//		if(maxNumber) {
+//		System.out.println(" ");
+//		} else if(minNumber) {
+//			System.out.println(" ");
+//		} 
+//		else {
+//			System.out.println();
+		}
+		}
+		
+		
+
+	}
+						
+
+}

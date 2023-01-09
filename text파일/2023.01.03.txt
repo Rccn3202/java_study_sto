@@ -1,0 +1,242 @@
+오전 9:00 2023-01-03
+
+1. 깃허브
+2.자바의 구성 및 변수의미
+
+1월달 공부 목표 : 자바 공부(1회독)/코드 직접 쳐보기
+
+매일 공부한 것 정리해서 노션/깃에 올리기
+
+
+
+
+=1==========
+1. 깃 복습
+1)초기 설정 하기
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+git 이름설정-git study 폴더 선택해서 git bash 연 후 git init-
+cd myfolder 마이폴더로 들어가기
+dir ls 마이폴더에 있는 리스트 확인
+my folder 안에 들어간 상태에서 다시 git init 치면 안됨(이미 git study 폴더 전체를 git init으로 설정했기 때문에)
+cd .. 폴더 밖으로 나가기
+git status 깃 상태 알려줌(아직 commit 안함, 파일 뭐 있는지 등등)
+git add a.txt/git add myfolder - staging area에 올림(초록색으로 표시됨)
+git commit -m "설명" - git을 commits로 올림
+myfolder에 b.txt 생성
+a.txt 수정 후 git status 치면 a.txt가 빨간색으로 나옴(modified, git add-commit 하라고 나옴)
+git add myfolder/b.txt 로 b도 스테이징(myfolder 중 b만 올라감, 그냥 myfolder까지만 하면 다 올라감)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+폴더에 들어간 상태에서 git add. 하면 폴더 안에 있는 모든 파일이 다 스테이징 됨
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+=2==========
+
+Vgit repository 생성 (public)
+V*https,ssh :프로토콜
+
+Vhttps://github.com/Rccn3202/TIL.git
+Vhttps://github.com/Rccn3202/study.git
+Vhttps://github.com/Rccn3202/Rccn3202.git
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+git remote add origin 주소 : 로컬-원격 연결
+git remote -v : 조회
+git status : 깃 상태 확인
+git push origin master ->github에 commit 했던 자료 올리는 것
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+V*문제
+VmarkdownBasic.md git에 업로드
+
+V1.로컬 저장소
+V1)staging 올린다 (git add)
+V2)repository에 (git commit)
+
+V2.원격저장소와 연결하기
+V-지금 연결된 곳을 지우고 다시 연결한다
+
+V3. push(올린다)
+
+V*방법
+V1. git remote rm origin
+V로컬과 원격 저장소의 연결을 끊는다(원격 저장소 자체 삭제되는 것 아님)
+V2. git status
+V현재 상태 확인
+V3. git add markdownBasic.md
+Vgit commit -m "설명"
+Vgit log --oneline
+V로컬 저장소에서 커밋 생성, 확인(log)
+V4.git push origin master
+V깃 푸쉬
+
+
+=3==========
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+실습)
+1. projectEx폴더를 깃이 관리하게 한다 - git init
+2. 원격저장소 본인 아이디 곳으로 push
+
+해결)
+1.projectEx폴더를 선택하고 git bash를 연다
+2.git init - projectEx폴더를 git이 관리하게 한다.
+3.git add . - 폴더 내의 모든 파일을 staging 시킨다
+4.git staatus - 상태확인(아직 no commits yet)
+5.git commit -m "설명" - commits 한다
+6.git remote rm origin - 기존에 연결되어있던 로컬-원격 연결 끊는다
+7.git remote add origin https://주소 - git 주소와 연결
+8.git remote -v - 조회
+9.git push origin master - push하기
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+fetch :컴퓨터의 CPU가 명령을 수행하기 위해 그 명령어를 레지스터에서 꺼내 오는 것
+fatal error : 심각한 오류
+untracked files : Untracked File은 파일이 Git 저장소에는 있으나 현재 Git에 의해 관리되지 않고 있는 파일을 의미한다
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+readme.md 만들기??
+git hub readme 꾸미기/repository 대문 꾸미기
+
+
+
+
+
+
+=4==========
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+깃 til 폴더에 readme md 올리기 숙제
+내일은 깃 클론 할 것
+ https://github.com/anuraghazra/github-readme-stats/blob/master/docs/readme_kr.md
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+자바
+이클립스 켜기
+new java project 생성(pj name : javaBasic1/java 11 버전)
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+class 이름 똑같으면 안됨, 이름 대문자로 써야됨/패키지는 소문자
+명령어들 : 메소드 (자주색: 키워드/검정:사용자가 바꿔 쓸 수 있는 것/초록색 주석문/; 하나의 명령이 끝났다-세줄로 써도 ;하나면 한 문장으로 친다)
+컨트롤z 실행취소
+첫글자가 대문자인 것은 객체이다
+. : ~안에 
+예 System. : 시스템이라는 객체 안에~
+() 함수(~해라,실행해라,동작해라/개발자가 만들 수도 있고(교재 파트1,2) 이미 만들어진 것을 쓸 수도 있고(교재 파트3)), 메소드
+{} 함수의 처리할 내용
+[] 배열(행렬)
+<> 
+main() 메인함수 - 기본?
+println 프린트라인함수 - 한줄을 찍어라? 
+()안에 출력할 내용을 써준다
+예) 덧셈해라(1,4)
+
+'' - 한글자만 쓰기
+"" - 한글자 이상 쓰기
+
+syso 쓰고 컨트롤 스페이스바 엔터 하면 자동 명령어 나옴
+
+//변수 10이라는 값을 a라는 공간에 넣는다
+**컴퓨터의 가장 기본 폰노이만 사람 주장 프로그램 내장방식 - 모든 프로그램은 반드시 주기억장치(RAM)에 올라가서 이것을 중앙처리장치가 가져다 연산하고 제어해서 수행한다.
+a = 10; //10을 a에 넣는다는 의미. 10 = a 안됨.
+/java는 변수를 자료형으로 선언하고 값을 넣는다. 예 int a;(선언) 따라서 그냥 a=10;만 쓰면 오류뜸
+//자료의 형태 - 학번(문자형) 성명(문자형) 나이(숫자형) 성별(논리형,불린형) 점수(실수형 변수)등등 객체형-의사들의 모임,개발자들의 모임
+//자료의 형태 - 학번(문자형) 성명(문자형) 나이(숫자형) 성별(논리형,불린형) 점수(실수형 변수)등등 객체형-의사들의 모임,개발자들의 모임 
+		String haknun;
+		String name;
+		String dept;
+		int age;
+		boolean sex;
+		double jumsu;
+		Doctor doctor; //Doctor 내가 만든거라 에러나는 것. 프로그래머가 만들어준 객체 자료형. Doctor라는 인터페이스나 클래스 만들어야함
+		Programmer programmer;
+	}
+
+}
+
+class Doctor{
+	
+}
+class Programmer{
+	
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+교제 변수부분 함
+챕터 02번 변수와 타입 내일 할 것
+연산자도..
+교제 예시 해보기
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+=5==========
+
+카페 자바 개요 참고
+java ee가 스프링
+JVM 단어 알아두기
+실습
+변수는 첫글자가 _나 영어로 시작해야함. 소문자/ 숫자로 시작하면 에러남 두 단어면 _로 하거나 대문자로 시작하거나 맘대로
+
+
+예제
+학교: 
+학과:
+학번: 나오게..
+
+학교 학과 학번 나오게
+
+package exBasic;
+
+public class MyFirst {
+
+	public static void main(String[] args) {
+		//변수 선언하기
+		String university; //대학명
+		String department; //학과명
+		String studentId; //학번
+		
+		//변수에 값을 넣기
+		university = "서울대학교";
+		department = "컴퓨터공학과";		
+		studentId = "23232323";
+		
+		System.out.println(university);
+		System.out.println(department);
+		System.out.println(studentId);
+		
+		System.out.println("------------");
+		System.out.println("학교 : " + university);
+		System.out.println("학과 : " + department);
+		System.out.println("학번 : " + studentId);
+
+System.out.println("------------");
+		System.out.println("학교 : " + university + "학과 : " + department + "학번 : " + studentId );
+System.out.println("------------");
+		System.out.print("학교 : " + university);
+		System.out.print("학과 : " + department);
+		System.out.print("학번 : " + studentId);	
+System.out.println("------------");
+		System.out.printf("학교 : %s, 학과 : %s, 학번 : %s", university, department, studentId)
+	}
+
+
+}
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+print() 이걸로 한줄로 표현할 수 있음
+printf() 포멧, 이런 형태로 찍어달라~ "", 밖의 값이 %s 안에 들어감
+
+\n 줄바꿈
+
+>>>>>>>>>>>>>>>>>>>>>>>>>
+
+예제2
+String line1;
+			line1="자바는";
+			
+			String line2 = "자바는";
+			String line3 = "시스템에 독립적인", line4 = "객체지향 프로그래밍 언어이다";
+	
+			System.out.println(line2);
+			System.out.println(line3);
+			System.out.println(line4);
+			
+			System.out.println("자바는\n 시스템에 독립적인\n 객체지향");
+

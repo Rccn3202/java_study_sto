@@ -64,7 +64,19 @@ public class b {
 		
 		System.out.println(mid);
 
-        
+		//방법4
+		Scanner Scr = new Scanner(System.in);
+		System.out.print("첫번째 숫자를 입력==>");
+		int number6=Scr.nextInt();//   300
+		System.out.print("두번째 숫자를 입력==>");
+		int number7=Scr.nextInt();//	  150
+		System.out.print("세번째 숫자를 입력==>");
+		int number8=Scr.nextInt();//	  250
+		
+		int middleNumber = (number6>=number7)? number6:number7; //숫자6과 숫자7 중 더 큰것이 숫자mid
+		middleNumber = (number8>=middleNumber)? number6:number8; //숫자8과 숫자mid 중 
+		System.out.println(middleNumber);
+
         
 	}
 

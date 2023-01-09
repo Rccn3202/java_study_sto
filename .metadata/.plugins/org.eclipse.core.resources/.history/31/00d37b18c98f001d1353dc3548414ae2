@@ -1,0 +1,43 @@
+package javaBasic1;
+
+public class ForEx {
+
+	public static void main(String[] args) {
+		//제어문
+		//while문
+//		int n=5;
+//		while(n<=10) {
+//			//위의 조건이 참이면 이곳을 수행
+//			System.out.println(n); //숫자 출력
+//			n++; //n=n+1;
+//		}//end while
+
+//		int a=10;
+//		while(a>=5) {   //참
+//		System.out.print(a+ " " );  //10
+//		a--; //조건이 끝나야 되니까 언젠가는 거짓이 되게 만들어야 한다.
+//		}
+		
+		//문제1  1 2 3 4 5 ~10
+		//ME (Correct)
+		int a1=1;
+		while(a1<=10) {
+			System.out.print(a1+ "\t"); // \t: 탭키
+			a1++;
+		}
+		
+		//문제2 0 5 10 15 20 ... 100
+		//ME
+		int a2=0;
+		while(a2<=100 ) {
+		System.out.print(a2+"\t");
+		a2= a2+5;
+		}
+		}
+		
+		
+		
+		
+	}//end main()
+
+}//end class

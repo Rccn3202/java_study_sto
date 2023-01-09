@@ -1,0 +1,37 @@
+할일
+1.깃허브 로그인
+2.노션 로그인
+3.git 설정
+git config --global --list : 작성자 상태 확인
+git config --global [user.name](http://user.name/) "이름"
+git config --global user.email "메일 주소"
+자격증명 삭제
+
+줌 이름 변경
+
+*자주 쓰는 git
+git remote add origin 주소 : git주소와 연결
+git remote -v : 조회
+git push origin master : push
+cd .. : 폴더 밖으로 나가기
+git status : 깃 상태
+git add . : staging
+git commit -m "설명" : git commit
+git 폴더명 : 폴더로 들어가기
+git remote rm origin : 로컬과 원격 저장소 연결 끊기
+ls : 생성된 파일 확인
+touch 파일명 : 파일 만들기
+
+*git 자료 올릴 때" (git clone/git 초기설정 했다 가정)
+1. 자료수정
+2. git pull origin master
+3. git commit -m "설명"
+4. git push origin master
+
+깃 
+
+노션
+
+지메일 
+
+로그아웃

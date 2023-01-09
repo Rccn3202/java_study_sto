@@ -1,0 +1,22 @@
+package javaBasic1;
+
+public class ForEx {
+
+	public static void main(String[] args) {
+		//제어문
+		//while문
+//		int n=5;
+//		while(n<=10) {
+//			//위의 조건이 참이면 이곳을 수행
+//			System.out.println(n); //숫자 출력
+//			n++; //n=n+1;
+//		}//end while
+
+		int a=10;
+		while(a>=5) {
+		System.out.println(a+ " " );
+		}
+		
+	}//end main()
+
+}//end class

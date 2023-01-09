@@ -51,6 +51,11 @@ public class ForEx {
 			a4++;
 		}
 		//방법2
+		char a5='A';
+		while(a5<=90) {
+			System.out.print(Character.toChars(a5));
+			a5++;
+		}
 		
 		
 		//학생이름을 3번 반복해서 입력 받고 출력하세요 (몇번째 입력된 이름인지도 표시)

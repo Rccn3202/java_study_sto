@@ -48,7 +48,7 @@ public class forforEx {
 		for(int i=2;i<=9;i++) {
 			for(int j=1;j<=9;j++) {
 				int x=i*j;
-			System.out.print(i+"X"+j+"="+x+" ");	
+			System.out.printf("%2d X %2d=%2d",i,j,x);	
 			
 			} System.out.println();
 		}
@@ -63,7 +63,7 @@ public class forforEx {
 		for(int i1=1;i1<=9;i1++) {
 			for(int j1=2;j1<=9;j1++) {
 				int x1=i1*j1;
-			System.out.print(j1+"X"+i1+"="+x1+" ");	
+			System.out.printf("%2d X %2d=%2d",i1,j1,x1);		
 			
 			} System.out.println();
 		}

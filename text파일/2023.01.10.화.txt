@@ -1,0 +1,14 @@
+2023.01.10.화
+
+
+=1=
+자바
+public class 이름 바꾸고 왼쪽에 파일명도 바꾸려면 펑션2
+
+main 쓰고 ctrl+space 치면 public static void main(String[] args) { 나옴
+
+=2=
+for문의 변수는 a1보단 i,j,k...가 좋다
+for문 문제 5번 해보기
+-마지막 숫자만 지우기->문자를 숫자로 변환
+-제거한 숫자들 더하기

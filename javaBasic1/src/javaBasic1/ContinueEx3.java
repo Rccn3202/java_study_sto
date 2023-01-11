@@ -1,5 +1,7 @@
 package javaBasic1;
 
+import java.util.Scanner;
+
 public class ContinueEx3 {
 
 	public static void main(String[] args) {
@@ -56,7 +58,39 @@ public class ContinueEx3 {
 			
 		
 		System.out.println();
-		System.out.println("7----");
+		System.out.println("----");
+		
+		
+		
+		System.out.println((int)(Math.random()*49)+1);
+		
+		
+		
+		System.out.println();
+		System.out.println("--7---");
+		boolean k=null;
+		while(k) {
+		System.out.println("메뉴");
+		
+	
+		Scanner v1 =new Scanner(System.in);
+		System.out.println("선택1> ");
+		if(v1.equals("1")) {
+			System.out.println("일번");
+		} else if(v1.equals("2")) {
+			System.out.println("2번");
+		} else if(v1.equals("3")) {
+			System.out.println("3번");
+		} else if (v1.equals("0")){
+		System.out.println("종료");	break;
+		
+		}
+		}
+			
+	
+		
+		
+		
 		
 		
 		
@@ -66,16 +100,6 @@ public class ContinueEx3 {
 		System.out.println("-----");
 		
 		
-		System.out.println();
-		System.out.println("-----");
-		
-		
-		System.out.println();
-		System.out.println("-----");
-		
-		
-		System.out.println();
-		System.out.println("-----");
 		
 	}//end main
 

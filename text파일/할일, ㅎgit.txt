@@ -8,6 +8,8 @@ git config --global user.email "메일 주소"
 자격증명 삭제
 
 줌 이름 변경
+943 132 7666
+795 7955
 
 *자주 쓰는 git
 git remote add origin 주소 : git주소와 연결
@@ -34,4 +36,5 @@ touch 파일명 : 파일 만들기
 
 지메일 
 
+카톡
 로그아웃

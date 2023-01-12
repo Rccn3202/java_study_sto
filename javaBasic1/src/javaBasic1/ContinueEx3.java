@@ -92,6 +92,7 @@ String num=null; //계좌번호
 int money=0; //입력받는 돈 변수
 int balance=0; //잔액
 int minu=0; //출금액
+
 while(true) {
 	System.out.println("----------------------------------------");
     System.out.println("1. 예금 | 2. 출금 | 3. 잔고 | 4 이체 | 0 종료 ");
@@ -99,6 +100,7 @@ while(true) {
 
     System.out.print("선택> ");
     choice=sc.nextLine();	
+   
 
     switch(choice) {
     
@@ -115,17 +117,19 @@ while(true) {
 //    	System.out.println("종료합니다");
 //    } else if(choice.equals("2"))
     
-    System.out.println("다른업무 1/종료 2");
+    System.out.println("다른업무 1/종료 2");{
     choice=sc.nextLine();
     
     if(choice.equals("1")) {
-    	System.out.println("다른업무");
+    	System.out.println();  //업무목록 나오게 하기
     }
-    else if(choice.equals("2"))
-    else  {
-    	System.out.println("잘못입력");
+    else if(choice.equals("2")) {
+    	System.out.println("종료");break;   //종료 안되는데??????
     }
-    
+    else {
+    	System.out.println("잘못입력"); //다른업부/종료 나오게
+    }
+    }
 //    switch(choice) {  //switch 사용?
 //   
 //    

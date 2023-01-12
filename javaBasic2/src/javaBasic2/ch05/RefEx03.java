@@ -30,8 +30,10 @@ public class RefEx03 {
 
 
 class Person1{
+	//멤버필드
 	String address;
 	double point;
+	//멤버 메소드
 	void getAddress(){
 		System.out.println("address"+address);
 	}
@@ -41,11 +43,18 @@ class Person1{
 	void getAll(){
 		System.out.println(address+point);
 	}
-	void setAddress(String a) {
+	void setAddress(String address) {
+		this.address=address;
+		System.out.println(address);
 	}
-	void setPoint(double b) {
+	void setPoint(double point) {
+		this.point=point;
+		System.out.println(point);
 	}
-	void setAll(String c, double d) {
+	void setAll(String address, double point) {
+		this.address=address;  //this: 자신의 클래스의 멤버필드
+		this.point=point;
+	System.out.println(address+point);
 	}
 	void setEx(int e,boolean f, String g,double h) {
 		

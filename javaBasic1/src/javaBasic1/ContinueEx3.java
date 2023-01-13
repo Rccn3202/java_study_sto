@@ -112,16 +112,16 @@ while(true) {
     
     
     ///추가
-   
+   //Ref 03 이용해볼까??
 //    if(choice.equals("1")) { //if 사용
 //    	System.out.println("종료합니다");
 //    } else if(choice.equals("2"))
     
-    System.out.println("다른업무 1/종료 2");{
+    System.out.println("다른업무 1/종료 2");{ 
     choice=sc.nextLine();
     
     if(choice.equals("1")) {
-    	System.out.println();  //업무목록 나오게 하기
+    	System.out.println();  //업무목록 나오게 하기 끝
     }
     else if(choice.equals("2")) {
     	System.out.println("종료");break;   //종료 안되는데??????
@@ -143,7 +143,7 @@ while(true) {
 //    }
 //    default : System.out.println("잘못 입력");
 //    
-//    }
+//    
     }//end switch
     
     

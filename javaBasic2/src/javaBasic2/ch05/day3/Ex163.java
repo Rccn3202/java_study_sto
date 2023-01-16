@@ -3,7 +3,7 @@ package javaBasic2.ch05.day3;
 public class Ex163 {
 
 	public static void main(String[] args) {
-		// 문자열 분리
+		// 문자열 분리 //새해 복 많이 받으세요 분리해서 새해 라는 단어가 가장 많이 쓰였다 이런식으로 사용
 		String board="번호,제목,내용,글쓴이";
 		String board1="번호1 제목1 내용1 글쓴이1";
 		String board2="번호2-제목2-내용2-글쓴이2";

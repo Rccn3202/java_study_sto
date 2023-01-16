@@ -4,100 +4,84 @@ import java.util.Scanner;
 
 public class ProjectEx01_T {
 
-	public static void main(String[] args) {
-		// //반찬가게
-		//1. 클래스의 필드에 직접 값을 넣어준다.
-		Banchan p1=new Banchan(); //메인 메소드
-		inputM(p1);//입력담담 호출->static void inputM()으로 간다
-		Banchan p2=new Banchan();
-		inputM(p2);
-		Banchan p3=new Banchan();
-		inputM(p3);
-		
-//		//잘팔린 종류
-//		String best=null;
-//		//안팔린 종류
-//		String worst=null;
-		
-		//남은 갯수 메소드 호출
-		int last=p1.getlast(p1.make,p1.sale);
-		
-//		
-		//출력
-		System.out.println("반찬가게");
-		System.out.println();
-		System.out.println("종류   만든갯수   판매갯수   남은갯수");
-		System.out.println(p1.kind+" "+p1.make+" "+p1.sale+" "+p1.last);
-		System.out.println(p2.kind+" "+p2.make+" "+p2.sale+" "+p2.last);
-		System.out.println(p3.kind+" "+p3.make+" "+p3.sale+" "+p3.last);
-		
-//		System.out.println("Best "+best);
-//		System.out.println("Worst "+worst);
-	
-		
-	} //메인 메소드
+   public static void main(String[] args) {
+      // 조별로 클래스 설계한 것 코딩하기 
+       Banchan4 ban1  = new Banchan4();
+       inputM(ban1);
+       Banchan4 ban2  = new Banchan4();
+       inputM(ban2);
+       Banchan4 ban3  = new Banchan4();
+       inputM(ban3);
+       
+       ban1.remainFoodM();
+       ban2.remainFoodM();
+       ban3.remainFoodM();
+       
+       printM(ban1, ban2, ban3);
+       saleBestWestM(ban1, ban2, ban3);
+   }
+   
+   public static void inputM(Banchan4 ban ) {
+      Scanner sc = new Scanner(System.in);
+      System.out.println("종류 >");
+      ban.kind = sc.next();
+      System.out.println("만든 갯수 >");
+      ban.makeFood = sc.nextInt();
+      System.out.println("판매 갯수 >");
+      ban.saleFood = sc.nextInt();
+   }
+   // Banchan b1 = ban1;
+   public static void printM(Banchan4 b1,  Banchan4 b2, Banchan4 b3 ) {
+         System.out.println(" ===  이젠 반찬가게 매출현황 ==== "); 
+        System.out.println("종류   만든갯수   판매갯수   남은갯수");
+        System.out.println(b1.kind + "    " + b1.makeFood + "     " + b1.saleFood + "     " + b1.remainFood );
+        System.out.println(b2.kind + "    " + b2.makeFood + "     " + b2.saleFood + "     " + b2.remainFood );
+        System.out.println(b3.kind + "    " + b3.makeFood + "     " + b3.saleFood + "     " + b3.remainFood );
+   }
+   //제일 잘 팔리는 것, 제일 안 팔리는 것 판단하는 메소드
+   public static void saleBestWestM(Banchan4 b1,  Banchan4 b2, Banchan4 b3) {
+      if(b1.perCalc >= b2.perCalc && b1.perCalc >= b3.perCalc) {
+         System.out.println("제일 잘 팔린 음식은 >" + b1.kind + " 단위 >" + b1.perCalc);
+      }else if(b2.perCalc >= b1.perCalc && b2.perCalc >= b3.perCalc) {
+         System.out.println("제일 잘 팔린 음식은 >" + b2.kind + " 단위 >" + b2.perCalc);
+      }else if(b3.perCalc >= b1.perCalc && b3.perCalc >= b1.perCalc) {
+         System.out.println("제일 잘 팔린 음식은 >" + b3.kind + " 단위 >" + b3.perCalc);   
+      }
+      
+      if(b1.perCalc <= b2.perCalc && b1.perCalc <= b3.perCalc) {
+         System.out.println("제일 안 팔린 음식은 >" + b1.kind + " 단위 >" + b1.perCalc);
+      }else if(b2.perCalc <= b1.perCalc && b2.perCalc <= b3.perCalc) {
+         System.out.println("제일 안 팔린 음식은 >" + b2.kind + " 단위 >" + b2.perCalc);
+      }else if(b3.perCalc <= b1.perCalc && b3.perCalc <= b1.perCalc) {
+         System.out.println("제일 안 팔린 음식은 >" + b3.kind + " 단위 >" + b3.perCalc);   
+      }
+      
+   }   
+}
 
-	static void inputM(Banchan p1) {
-		//입력 담당 메소드
-		System.out.println("-------------");
-		System.out.println("반찬가게");
-		System.out.println("-------------");
-		System.out.println();
-		
-		Scanner sc1=new Scanner(System.in);
-		System.out.println();
-		System.out.println("종류> ");
-		p1.kind=sc1.next();
-		System.out.println("만든 갯수> ");
-		p1.make=sc1.nextInt();
-		System.out.println("판매 갯수> ");
-		p1.sale=sc1.nextInt();
-		System.out.println("남은 갯수> "+p1.last);
-		
-	}
-	
-} //end ClassEx01
+class Banchan4{
+   String kind;//종류
+   int makeFood;//만든 갯수
+   int saleFood;//판매 갯수
+    int remainFood;//남은 갯수
+    double perCalc;//남은 갯수에 대한 백분율
+    
+    void remainFoodM() {
+       remainFood = makeFood - saleFood;
+       perCalc = saleFood / (double) makeFood * 100;
+    }
+    
+    
+  /*  조별로 
+    반찬가게 사장 
+    종류      만든갯수   판매갯수  남은갯수
+    조림류    10         5               5 
+    국류       5           3              2
+    샐러드    15        11              4
 
-class Banchan {
-	String kind; //종류
-	int make=0;  //만든 갯수
-	int sale=0; //판매 갯수
-	int last=0;  //남은 갯수
-	
-	
-	//메소드
-	String getkind ( String kind ) { //종류 입력받는다, 종류 kind 변수로
-		return null; }
-	int getmake ( int make ) { //만든 갯수 구한다, 만든갯수 make 변수로
-		return make;}
+    제일 잘 팔린 종류  국류
+    제일 안 팔린 종류  조림류
 
-	int getsale ( int sale ) { //판매갯수 구한다
-		return sale; }
-
-	int getlast ( int make, int sale ) {  //남은갯수 구한다
-		return make-sale;}
-	
-
-
-	String best() {//제일 잘 팔린 종류
-		
-//		a=sale/make;
-//	if(p1>p2) return p1;
-//	else if(p2>p3) return p2;
-//		return p3;
-			
-		
-		return kind; 
-	}
-	String worst() { //제일 안팔린 종류
-		return null;
-	}
-
-	}//class Banchan2
-
-	 
-	   
-
-	}
-
+    잘팔린 구할 때 백분율 5/10 * 100 */ 
+   
 }

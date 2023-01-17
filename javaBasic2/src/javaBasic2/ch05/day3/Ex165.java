@@ -17,7 +17,7 @@ public class Ex165 {
 		
 		boolean[] ba=new boolean[20];
 
-		Student11[] st1=new Student11[14];
+		Student1[] st1=new Student1[14];
 		//Student1의 클래스의 주소가 담기는 배열, 크기는 14개, st1에 힙메모리에 생긴 주소가 담긴다, st1의 자료형은 Student1[]
 		
 		

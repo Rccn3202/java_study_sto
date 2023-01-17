@@ -9,8 +9,10 @@ public class Ex01 {
 		//null은 힙메모리의 주소를 아직 넣지 않았고 나중에 넣을 것이라는 참조변수
 		Student st= 
 		System.out.println(st);          */
-	
+		
+		//힙메모리에 올린다
 		Student s1=new Student();  //1
+		
 		s1.setName("홍길동");  //Student class의 setName 메소드 호출 후 홍길동 입력   //2
 		System.out.println(s1.getName()); //6
 		
@@ -35,10 +37,12 @@ public class Ex01 {
 }
 
 class Student{
+	//필드, 클래스멤버
 	String name; //학생명 /5
 	String phone; // 학생전화
 	int kor;
 	
+	//메서드-동작
 	void setName(String name) { //호출하고 입력된 홍길동을 String name으로 받음  /3
 		this.name=name; //this. : 자기클래스(Student 클래스)의 name이다. /4
 	}	

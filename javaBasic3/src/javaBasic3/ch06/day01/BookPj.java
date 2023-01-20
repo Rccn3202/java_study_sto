@@ -4,28 +4,40 @@ import java.io.InputStream;
 import java.util.Scanner;
 
 public class BookPj {
-	Scanner sc=Scanner(System.in);
+	
 	public static void main(String[] args) {
 		// 
+		
+		boolean
+		
+		Scanner sc=Scanner(System.in);
 		System.out.println("도서관리 프로그림");
 		System.out.println("로그인 화면");
 		System.out.println("사서ID> ");
 		String ID=sc.next();
+		System.out.println("");
 		
-		boolean ID=null;
+		String password;
 		
-		if(ID.equals("asdf")) {
+		
 			
-		}
-		System.out.println("패스워드> ");
+		
+		if(ID.equals("asdf") && password.equals("1234")) {
+			System.out.println("선택화면");
+		} else 
+		System.out.println("종료"); 
 		
 		
-	}
-	private Scanner Scanner(InputStream in) {
-		// TODO Auto-generated method stub
-		return null;
+		
+		
+		
+		
+		
+		
+		
 	}
 
+	
 
 }
 

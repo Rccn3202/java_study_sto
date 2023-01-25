@@ -1,0 +1,24 @@
+1. BookManager  boolean login()
+2. BookManager void init()
+3. BookManager void add(Book book)
+4. BookManager  void add(Member member) (3번유사)**
+5. BookManager Book findBook(String name)  
+6. BookManager Member findMember(String name) (5번유사)**
+7. BookManager void borrow(Book book, Member member) **
+8. BookManager returnBack(Book book, Member member) **
+9. BookManager BookRent[][] getLateRents()
+10. BookManager void run()
+
+
+
+-우리는 평소에 클래스 생성할 때 미리 main(String[] ... 생성해놓는데, 
+void run()이라고 한 이유는 그냥 main 클래스와의 구분 때문?
+
+-public, static, void 아직 구분 잘 모르겠음
+이거 다 퍼블릭으로 해놓고 접근제한자 구분해서 지우거나 바꾸거나 해봐야겠는데
+
+-날짜 자동으로 나오게 할 때 왜 int year=Calendar.DAY_OF_YEAR; 쓰면 제대로 안나오지?
+
+-마무리할 때 static, public ... 확인해보기(메모리 절약)
+
+-필드 게터세터 이용해야겠는데, 필드 프라이빗으로 해야함

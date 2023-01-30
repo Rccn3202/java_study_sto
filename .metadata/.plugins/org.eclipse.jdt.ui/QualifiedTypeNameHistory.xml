@@ -2,7 +2,13 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.print.attribute.SetOfIntegerSyntax"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="bookManagement.Search"/>
+    <fullyQualifiedTypeName name="b.B"/>
+    <fullyQualifiedTypeName name="a.aa.AA"/>
+    <fullyQualifiedTypeName name="b.ba.BA"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="singleton.Single"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

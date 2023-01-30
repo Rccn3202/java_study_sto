@@ -65,7 +65,8 @@ static, final 이런 부분 근처
 
 
 *컬렉션 <>
-ArrayList-[][]배열 편리하게 관리
+ArrayList-[][]배열 편리하게 관리  -->실무는 ArrayList 사용
+크기 size, 집어넣기 add, 빼면 get 써서 편하다~
 
 list.add -배열에 넣는것
 add 문법

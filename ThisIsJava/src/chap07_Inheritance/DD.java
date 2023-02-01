@@ -1,5 +1,5 @@
 package chap07_Inheritance;
 
-public class D {
+public class DD {
 
 }

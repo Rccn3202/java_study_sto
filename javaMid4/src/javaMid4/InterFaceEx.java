@@ -6,6 +6,7 @@ public class InterFaceEx {
 		AImpl aimpl=new AImpl();
 		DDimpl ddimpl=new DDimpl();
 		
+		
 
 	}
 

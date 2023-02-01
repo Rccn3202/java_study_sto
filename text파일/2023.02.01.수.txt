@@ -1,0 +1,34 @@
+2023.02.01.수
+
+=1============
+객체지향프로그램 핵심가치
+1.단순하게
+2.중복하지 말자
+3.역할별로 메소드명 동일하게 하자
+
+다형성 개념 문제
+1. 기본설계
+1) 메인 메소드가 있는 클래스
+   역할-메뉴 나오게
+         비지니스 클래스 객체생성해서 필요한 메소드 호출
+         비지니스클래스를 배열로 만들어서 각 지사 입력을 배열에 저장	->바이어클래스 new Product[10] 유사
+2) 비지니스클래스
+   매출현황 구하기
+   입력하기 (제품명, 판매량)
+   출력하기
+3) 부모클래스
+   지사명, 제품명, 제품가격, 판매량, 매출현황
+4) 자식클래스
+   toString() 재정의 : 참조변수를 출력하면 지사명 나오게
+
+2. 상세설계
+1) SaleMain.java
+   while사용 - 메뉴 
+2) SaleBusiness.java
+   saleStatusMethod()
+   input()
+   output()
+3) Jisa.java
+   jisaName, proName, proPrice, saleAmount, saleStatus
+4) Seoul, Gyeongin, Gangwon , Jeju.java
+   toString 재정의   

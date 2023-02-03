@@ -19,4 +19,12 @@
     <fullyQualifiedTypeName name="B_Ex02.ElementarySturdent"/>
     <fullyQualifiedTypeName name="B_Ex02.MiddleSchooler"/>
     <fullyQualifiedTypeName name="B_Ex02.HighSchoolStudent"/>
+    <fullyQualifiedTypeName name="javaMid6.p376.HankookTire"/>
+    <fullyQualifiedTypeName name="javaMid6.p376.Car"/>
+    <fullyQualifiedTypeName name="javaMid6.p376.KumhoTire"/>
+    <fullyQualifiedTypeName name="javaMid6.p376.Subway"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="javaMid6.p395.A.B"/>
+    <fullyQualifiedTypeName name="javaMid6.p395.OuterA"/>
+    <fullyQualifiedTypeName name="javaMid6.p395.OuterA.InnerA"/>
 </qualifiedTypeNameHistroy>

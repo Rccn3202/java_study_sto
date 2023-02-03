@@ -22,14 +22,17 @@ public class ArrayCreateByVaueListEx {
 		//-----------------------------
 		
 		//배열 변수 선언과 배열 생성 83 90 87
-		int[] scores= {83, 90, 87};
+		int[] scores= {83, 90, 87};   //*배열변수를 미리 선언한 후에는 값 목록을 변수에 대입할 수 없다.
 		
 		//총합과 평균 구하기
 		int sum=0;
-		for(int i=0;i<=scores.length;i++) {
+		for(int i=0;i<3;i++) {
 			sum+=scores[i];
 		}
 		System.out.println("총합: "+sum);
+		
+		double avg= (double) sum/3;
+		System.out.println("평균: "+avg);
 		
 		
 		

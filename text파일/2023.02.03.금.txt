@@ -60,7 +60,15 @@ static이 붙어 있는 것은 컴파일 단계에서 미리 메소드 영역 �
 메모리에 올려져 있는 것은 사용할 수 있습니다.
 
 =5===============
+w3
 Html Forms 참고(중요)
+Html 양식 참고해서 실습해보기
+<form action="/action_page.php"> ->액션하고, /액션_~ 서버 파일로 넘어간다.
+근데 php는 c언어?에서 쓰고 자바는 .jsp
+label은 firstname 등 설명 쓰는 것
+id="fname" ---> id=유일한 태그 붙이는 속성 가짐
+name="f"  --->name은 서버로 넘어갈 때의 파라미터(자바로 넘어갈 때 f라는 변수에 입력값을 저장할 거임
+
 
 
 
@@ -76,8 +84,10 @@ https://insight-bgh.tistory.com/m/21 보기!!!!!!!
 +9
 10,11은 쉽다
 
+html 생활코딩
 
 
 --------------------------
 재정의?????????????
 instanceof 부분-객체타입 확인
+https://insight-bgh.tistory.com/m/21 이런 것처럼 공부한것에 추가로 찾아서 개념 추가,정리

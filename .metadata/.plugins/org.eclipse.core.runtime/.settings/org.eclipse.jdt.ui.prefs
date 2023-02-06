@@ -7,6 +7,7 @@ eclipse.preferences.version=1
 org.eclipse.jdt.internal.ui.navigator.layout=1
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
 org.eclipse.jdt.ui.formatterprofiles.version=21
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="true" context\="java" deleted\="false" description\="print to standard out" enabled\="true" id\="org.eclipse.jdt.ui.templates.sysout" name\="sysout">System.out.println(${word_selection}${});${cursor}</template></templates>
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true

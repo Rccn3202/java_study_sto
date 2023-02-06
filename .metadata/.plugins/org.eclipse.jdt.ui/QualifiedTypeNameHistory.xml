@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.print.attribute.SetOfIntegerSyntax"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="bookManagement.Search"/>
     <fullyQualifiedTypeName name="b.B"/>
@@ -15,7 +14,6 @@
     <fullyQualifiedTypeName name="javaMid4.C"/>
     <fullyQualifiedTypeName name="javaMid5.MainActivity"/>
     <fullyQualifiedTypeName name="B_Ex02.SungJuk"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="B_Ex02.ElementarySturdent"/>
     <fullyQualifiedTypeName name="B_Ex02.MiddleSchooler"/>
     <fullyQualifiedTypeName name="B_Ex02.HighSchoolStudent"/>
@@ -27,4 +25,15 @@
     <fullyQualifiedTypeName name="javaMid6.p395.A.B"/>
     <fullyQualifiedTypeName name="javaMid6.p395.OuterA"/>
     <fullyQualifiedTypeName name="javaMid6.p395.OuterA.InnerA"/>
+    <fullyQualifiedTypeName name="javaMid7.p394.OutterB"/>
+    <fullyQualifiedTypeName name="javaMid7.p394.OutterB.InnerB"/>
+    <fullyQualifiedTypeName name="Oklistener"/>
+    <fullyQualifiedTypeName name="javaMid7.p394.Button"/>
+    <fullyQualifiedTypeName name="javaMid7.p394.Button.ClickListener"/>
+    <fullyQualifiedTypeName name="CancleListener"/>
+    <fullyQualifiedTypeName name="javaMid7.p3413.Car"/>
+    <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javaMid7.p417.RemoteControll"/>
+    <fullyQualifiedTypeName name="javaMid7.p417.A"/>
 </qualifiedTypeNameHistroy>

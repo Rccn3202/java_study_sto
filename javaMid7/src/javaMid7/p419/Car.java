@@ -9,9 +9,9 @@ public class Car {  //비즈니스 클래스
 		}
 	};
 
-	Tire t2=new Tire() {
+	Tire t2=new Tire() {  
 		
 	public void roll() {};
-	System.out.println("금호");
+	System.out.println("금호")
 	}
-}
+};

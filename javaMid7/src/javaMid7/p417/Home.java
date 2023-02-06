@@ -16,5 +16,19 @@ public class Home {
 			
 		}
 	};
+	private A ar=new A() {  //익명형 구현 클래스
+		
+		@Override
+		public void abM2() {
+			// TODO Auto-generated method stub
+			
+		}
+		
+		@Override
+		public void abM() {
+			// TODO Auto-generated method stub
+			
+		}
+	};
 	
 }

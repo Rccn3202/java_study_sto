@@ -36,4 +36,9 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javaMid7.p417.RemoteControll"/>
     <fullyQualifiedTypeName name="javaMid7.p417.A"/>
+    <fullyQualifiedTypeName name="javaMid8.exp422.OutterA.InnerA"/>
+    <fullyQualifiedTypeName name="javaMid8.exp422.Action"/>
+    <fullyQualifiedTypeName name="javaMid8.exp422.Vehicle"/>
+    <fullyQualifiedTypeName name="javaMid9.my_lib.pack1.A"/>
+    <fullyQualifiedTypeName name="javaMid9.my_lib.pack2.B"/>
 </qualifiedTypeNameHistroy>

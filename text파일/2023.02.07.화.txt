@@ -1,0 +1,44 @@
+2023.02.07.화
+
+자바스크립트 잘하면 좋음
+모던 자바스크립트 튜토리얼 https://ko.javascript.info/
+생활코딩 https://opentutorials.org/course/1
+인프런 https://www.inflearn.com/
+자바 튜토리얼 https://www.javatpoint.com/java-tutorial
+깃 서치 https://github.com/search  ->java study
+카페에서 이것이 자바다 문제 답 확인
+자바 설명서 https://docs.oracle.com/en/java/javase/11/docs/api/index.html
+
+=1======
+Animal animal = new Cat() { };  ->익명자식객체
+A a=new A  ->A가 인터페이스이므로 new 생성 못함/인터페이스는 추상 메소드가 있어서 new 할 수 없다. (void adM(); 이런식의 추상메소드(미완성된 설계도)/원래는 implements A를 한 후 오버라이드)
+->이걸 익명클래스로 만들어 쓸 수 있다.(익명 구현 클래스)
+->implements 안하고 아예 new 한 뒤 안에 오버라이드함
+A a=new A() { A클래스에 있는 메소드들 오버라이드 }; 
+
+9장 확인문제
+인스턴스: static이 안붙어있는것
+
+=2========
+9 연습문제
+
+
+=3==========
+파라미터 = 매개변수
+
+=4===========
+10장
+자바 압축파일은 .jar
+라이브러리-자바파일 모아두는 것
+JRE System Library
+
+확장자 
+.java - 사람이 코드하는 것
+.class-클래스로더로 컴파일 된 것, 이진수로 됨/사람이 못알아봄(사람이 볼 수 있는 것은 소스파일)/실행은 .class 파일이 실행되는 것
+	배포할 때는 class만 필요함/ 배포시에는 class만 보내고 .java 안보냄
+.jar-class를 압축해놓은것
+
+만약 다른 프로젝트의 자료를 이용하려면 .jar파일을 build path해야한다
+
+10.1 실습 jar 파일 배포할 때
+export java source files and resources : .java파일 까지 같이 압축해서 보냄

@@ -1,0 +1,2 @@
+module javaMid10 {
+}

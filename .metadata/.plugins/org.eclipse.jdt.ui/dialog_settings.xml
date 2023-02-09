@@ -99,7 +99,7 @@
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 	<section name="BuildPathsPropertyPage">
-		<item key="pageIndex" value="2"/>
+		<item key="pageIndex" value="1"/>
 	</section>
 	<section name="JarPackageWizard">
 		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
@@ -121,6 +121,8 @@
 		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
 		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
 		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="my_module_b/dist/my_module_b.jar"/>
+			<item value="my_module_a/dist/my_module_a.jar"/>
 			<item value="javaMid9\src\dist\my_libraryEx.jar"/>
 			<item value="javaMid9/src/dist/my_library.jar"/>
 		</list>

@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\webStudyB\study\JavaStudy_AtHome"/>
+			<item value="C:\webStudyB\study\javaStudy_Home"/>
 			<item value="C:\webStudyB\study\javaStudy_Home\src\this_Is_Java"/>
 			<item value="C:\webStudyB\study\temp_study\javaMid3\src"/>
 			<item value="C:\webStudyB\study\java_study\javaBasic1"/>
@@ -17,5 +19,13 @@
 		</list>
 	</section>
 	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="384"/>
+		<item key="DIALOG_Y_ORIGIN" value="214"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
 	</section>
 </section>

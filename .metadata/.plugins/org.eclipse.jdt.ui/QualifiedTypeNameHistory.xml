@@ -33,7 +33,6 @@
     <fullyQualifiedTypeName name="CancleListener"/>
     <fullyQualifiedTypeName name="javaMid7.p3413.Car"/>
     <fullyQualifiedTypeName name="java.lang.System.LoggerFinder"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javaMid7.p417.RemoteControll"/>
     <fullyQualifiedTypeName name="javaMid7.p417.A"/>
     <fullyQualifiedTypeName name="javaMid8.exp422.OutterA.InnerA"/>
@@ -41,4 +40,23 @@
     <fullyQualifiedTypeName name="javaMid8.exp422.Vehicle"/>
     <fullyQualifiedTypeName name="javaMid9.my_lib.pack1.A"/>
     <fullyQualifiedTypeName name="javaMid9.my_lib.pack2.B"/>
+    <fullyQualifiedTypeName name="pack1.A"/>
+    <fullyQualifiedTypeName name="pack3.C"/>
+    <fullyQualifiedTypeName name="pack2.B"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.nio.channels.UnresolvedAddressException"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="javaMid10.p468.A"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
+    <fullyQualifiedTypeName name="java.lang.ClassCastException"/>
+    <fullyQualifiedTypeName name="javaMid10.p470.Account"/>
+    <fullyQualifiedTypeName name="javaMid10.p470.InsufficientException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javaMid10.p470.ScoreMinException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="chap11_Exception.Example.Ex07.NotExistIDException"/>
+    <fullyQualifiedTypeName name="chap11_Exception.Example.Ex07.WrongPasswordException"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
 </qualifiedTypeNameHistroy>

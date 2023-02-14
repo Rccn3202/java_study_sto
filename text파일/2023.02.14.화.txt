@@ -1,0 +1,12 @@
+2023.02.14.화
+
+=1========
+set 
+동등 객체 찾는법 
+1.hashcode() - 주기억장치(힙,스택,메소드) 주소를 만드는 코드
+2.
+
+The method add  is not applicable for the arguments 
+
+
+https://www.websiteplanet.com/ko/webtools/lorem-ipsum/
